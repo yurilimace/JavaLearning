@@ -6,6 +6,6 @@ package com.cursojava.POO.ExercicioPOO.aula24;
 public class contaCorrente {
     String numeroConta;
     double saldo;
-    String status;
+    boolean status;
     double limite;
 }

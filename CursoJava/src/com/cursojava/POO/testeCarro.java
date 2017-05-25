@@ -17,12 +17,23 @@ public class testeCarro {
         fusca.modelo="Beatle";
         fusca.numPassageiros=4;
         fusca.capCombustivel=70;
-        fusca.consumoCombustivel=0.2;
+        fusca.consumoCombustivel=0.5;
+
 
         System.out.println(van.marca);
         System.out.println(van.modelo);
+        van.exibirAutonomia();
+        double autonomia = van.obterAutonomia();
+        System.out.println("autonomia é " + autonomia);
+        double qtdCombustivel = van.calculaCombustivel(10);
+        System.out.println("qtdCombutivel10 " + qtdCombustivel);
 
         System.out.println(fusca.marca);
         System.out.println(fusca.modelo);
+        fusca.exibirAutonomia();
+        autonomia = fusca.obterAutonomia();
+        System.out.println("autonomia é " + autonomia);
+        qtdCombustivel = fusca.calculaCombustivel(10);
+        System.out.println("qtdCombutivel10 " + qtdCombustivel);
     }
 }
