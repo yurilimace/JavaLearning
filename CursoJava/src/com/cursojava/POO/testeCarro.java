@@ -8,7 +8,8 @@ public class testeCarro {
         Carro van = new Carro();
         van.marca="Fiat";
         van.modelo="Ducato";
-        van.numPassageiros=10;
+        //foi instanciado dentro do construtor sem parametro
+        //van.numPassageiros=10;
         van.capCombustivel=100;
         van.consumoCombustivel=0.2;
 
@@ -35,5 +36,8 @@ public class testeCarro {
         System.out.println("autonomia é " + autonomia);
         qtdCombustivel = fusca.calculaCombustivel(10);
         System.out.println("qtdCombutivel10 " + qtdCombustivel);
+
+        Carro van2 = new Carro("fiat","palio",5,70,0.8);
+        System.out.println(van2.modelo);
     }
 }

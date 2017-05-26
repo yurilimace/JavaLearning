@@ -11,6 +11,25 @@ public class Carro {
     double capCombustivel;
     double consumoCombustivel;
 
+
+
+
+    //Criando construtor sem parametro
+    public Carro(){
+        System.out.println("classe foi instanciada");
+
+    }
+
+    //Criando construtor com parametro
+    public Carro(String _marca,String _modelo,int _numPassageiros,double _capCombustivel,double _consumoCombustivel){
+        marca=_marca;
+        modelo=_modelo;
+        numPassageiros=_numPassageiros;
+        capCombustivel=_capCombustivel;
+        consumoCombustivel=_consumoCombustivel;
+    }
+
+
     //criando metodos sem retorno e sem parametro
     //nome do metodo sempre começa com verbo
     void exibirAutonomia(){
